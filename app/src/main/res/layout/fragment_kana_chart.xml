@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.KanaChart.KanaChartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/KanaDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/txtKanaDesc1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtKanaDesc1"
+                    android:textAlignment="center"
+                    android:textSize="16sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtKanaDesc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtKanaDesc2"
+                    style="@style/KanaDescTxt">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtKanaDesc3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtKanaDesc3"
+                    style="@style/KanaDescTxt">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txtKanaDesc4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txtKanaDesc4"
+                    style="@style/KanaDescTxt">
+                </TextView>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/imgKanaIntro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@string/imgKanaIntro"
+                app:srcCompat="@drawable/kana_intro">
+            </ImageView>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/txtKanaDesc5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtKanaDesc5"
+            style="@style/KanaDescTxt">
+        </TextView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/HiraganaChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/imgHiraganaChart"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/imgHiraganaChart"
+                app:srcCompat="@drawable/hiraganachart">
+            </ImageView>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/KatakanaChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/imgKatakanaChart"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/imgKatakanaChart"
+                app:srcCompat="@drawable/katakanachart">
+            </ImageView>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>
