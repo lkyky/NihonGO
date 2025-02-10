@@ -20,21 +20,13 @@
             android:name=".forgotpw"
             android:exported="false" />
         <activity
-            android:name=".splash3"
-            android:exported="false"
-            android:theme="@style/AppTheme.NoAnimation" />
-        <activity
-            android:name=".splash2"
-            android:exported="false"
-            android:theme="@style/AppTheme.NoAnimation" />
-        <activity
             android:name=".signup"
             android:exported="false" />
         <activity
             android:name=".login"
             android:exported="false" />
         <activity
-            android:name=".splash1"
+            android:name=".splash2"
             android:exported="true"
             android:theme="@style/AppTheme.NoAnimation">
             <intent-filter>

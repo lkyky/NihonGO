@@ -20,7 +20,7 @@ public class splash2 extends BaseActivity {
             @Override
             public void run() {
                 finish();
-                startActivity(new Intent(splash2.this, splash3.class));
+                startActivity(new Intent(splash2.this, login.class));
                 overridePendingTransition(0, 0);
                 finish();
             }
