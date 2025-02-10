@@ -75,4 +75,23 @@
         android:name="com.example.nihongo.ui.THome.TVideosFragment"
         android:label="@string/menu_t_videos"/>
 
+    <fragment
+        android:id="@+id/LessonReadyFragment"
+        android:name="com.example.nihongo.ui.LessonReadyFragment">
+        <argument
+            android:name="lessonFragment"
+            app:argType="string"
+            android:defaultValue=""/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/BLesson1Fragment"
+        android:name="com.example.nihongo.ui.BHome.BLesson1.BLesson1"
+        android:label="@string/menu_b_lesson1"/>
+
+    <fragment
+        android:id="@+id/BLesson2Fragment"
+        android:name="com.example.nihongo.ui.BHome.BLesson2"
+        android:label="@string/menu_b_lesson2"/>
+
 </navigation>

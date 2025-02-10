@@ -64,4 +64,25 @@
     <string name="imgKanaIntro">Intro of Kana</string>
     <string name="imgHiraganaChart">Hiragana Chart</string>
     <string name="imgKatakanaChart">Katakana Chart</string>
+    <string name="txtBLessons">Beginner Lessons</string>
+    <string name="txtBLesson1"><b>Lesson 1 - Numbers（数字）</b></string>
+    <string name="txtBLessonDesc1">In this lesson, you will get to learn the numbers 1–10 in Japanese.</string>
+    <string name="txtBLesson2"><b>Lesson 2 - Family Members（家族）</b></string>
+    <string name="txtBLessonDesc2">In this lesson, you will learn the basic family members terms.</string>
+    <string name="txtBExercises">Beginner Exercises</string>
+    <string name="txtBExercise1"><b>Exercise 1 - Numbers（数字）</b></string>
+    <string name="txtBExerciseDesc1">In this exercise, you will practice what you have learnt in lesson 1.</string>
+    <string name="txtBExercise2"><b>Exercise 2 - Family Members　 （家族）</b></string>
+    <string name="txtBExerciseDesc2">In this exercise, you will recall the family members terms you have learnt in lesson 2.</string>
+    <string name="txtBVideos">Beginner Videos</string>
+    <string name="txtBVideo1"><b>Introduction to Particles（助詞）</b></string>
+    <string name="txtBVideoDesc1">In this video, you will get to know the common particles used in Japanese.</string>
+    <string name="txtBVideo2"><b>I am/ I am not/ ...（は／です／ですか／…）</b></string>
+    <string name="txtBVideoDesc2">In this video, </string>
+    <string name="menu_lesson_ready">Lesson Ready</string>
+    <string name="txtLessonReady">Are you ready to learn?</string>
+    <string name="btnNotReady">NO!</string>
+    <string name="btnReady">YES!</string>
+    <string name="menu_b_lesson1">Beginner Lesson 1</string>
+    <string name="menu_b_lesson2">Beginner Lesson 2</string>
 </resources>
