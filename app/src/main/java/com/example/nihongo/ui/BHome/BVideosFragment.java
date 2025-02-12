@@ -1,27 +1,20 @@
 package com.example.nihongo.ui.BHome;
 
-import androidx.lifecycle.ViewModelProvider;
-
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
 import com.example.nihongo.R;
+import com.google.android.material.card.MaterialCardView;
 
 public class BVideosFragment extends Fragment {
-
-    private BVideosViewModel mViewModel;
-
-    public static BVideosFragment newInstance() {
-        return new BVideosFragment();
-    }
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
@@ -29,10 +22,28 @@ public class BVideosFragment extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(BVideosViewModel.class);
-        // TODO: Use the ViewModel
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        MaterialCardView video1Card = view.findViewById(R.id.btnBVideo1);
+        MaterialCardView video2Card = view.findViewById(R.id.btnBVideo2);
+
+        video1Card.setOnClickListener(v -> openYouTubeLink("https://youtu.be/37ocL_PY-Bo"));
+        video2Card.setOnClickListener(v -> openYouTubeLink("https://youtu.be/mTIWMBfo2o8"));
+    }
+
+    private void openYouTubeLink(String url){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.setPackage("com.google.android.youtube");
+
+        if(intent.resolveActivity(requireActivity().getPackageManager()) != null){
+            startActivity(intent);
+        }
+        else{
+            Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(webIntent);
+        }
     }
 
 }
