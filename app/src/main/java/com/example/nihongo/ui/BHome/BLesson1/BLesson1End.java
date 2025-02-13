@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,16 +14,16 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.nihongo.R;
-import com.example.nihongo.databinding.FragmentBLesson1Binding;
+import com.example.nihongo.databinding.FragmentBLesson1EndBinding;
 
-public class BLesson1 extends Fragment {
+public class BLesson1End extends Fragment {
 
-    private FragmentBLesson1Binding binding;
+    private FragmentBLesson1EndBinding binding;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentBLesson1Binding.inflate(inflater, container, false);
+        binding = FragmentBLesson1EndBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
@@ -39,13 +40,13 @@ public class BLesson1 extends Fragment {
         ImageView btnBack = binding.btnBack;
         btnBack.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(view);
-            navController.navigate(R.id.BLessonsFragment);
+            navController.navigate(R.id.BLesson1Pg4Fragment);
         });
 
-        ImageView btnForward = binding.btnForward;
+        TextView btnForward = binding.linkToExercise1;
         btnForward.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(view);
-            navController.navigate(R.id.BLesson1Pg2Fragment);
+            navController.navigate(R.id.BExercise1Fragment);
         });
     }
 

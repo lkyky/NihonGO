@@ -65,14 +65,14 @@
     <string name="imgHiraganaChart">Hiragana Chart</string>
     <string name="imgKatakanaChart">Katakana Chart</string>
     <string name="txtBLessons">Beginner Lessons</string>
-    <string name="txtBLesson1"><b>Lesson 1 - Numbers（数字）</b></string>
+    <string name="txtBLesson1"><b>Lesson 1 - \n Numbers pt.1（数字）</b></string>
     <string name="txtBLessonDesc1">In this lesson, you will get to learn the numbers 1–10 in Japanese.</string>
-    <string name="txtBLesson2"><b>Lesson 2 - Family Members（家族）</b></string>
+    <string name="txtBLesson2"><b>Lesson 2 - \n Family Members pt.1（家族）</b></string>
     <string name="txtBLessonDesc2">In this lesson, you will learn the basic family members terms.</string>
     <string name="txtBExercises">Beginner Exercises</string>
-    <string name="txtBExercise1"><b>Exercise 1 - Numbers（数字）</b></string>
+    <string name="txtBExercise1"><b>Exercise 1 - \n Numbers pt.1（数字）</b></string>
     <string name="txtBExerciseDesc1">In this exercise, you will practice what you have learnt in lesson 1.</string>
-    <string name="txtBExercise2"><b>Exercise 2 - Family Members　 （家族）</b></string>
+    <string name="txtBExercise2"><b>Exercise 2 - \n Family Members pt.1（家族）</b></string>
     <string name="txtBExerciseDesc2">In this exercise, you will recall the family members terms you have learnt in lesson 2.</string>
     <string name="txtBVideos">Beginner Videos</string>
     <string name="txtBVideo1"><b>Introduction to Particles（助詞）</b></string>
@@ -85,4 +85,35 @@
     <string name="btnReady">YES!</string>
     <string name="menu_b_lesson1">Beginner Lesson 1</string>
     <string name="menu_b_lesson2">Beginner Lesson 2</string>
+    <string name="btnClose">Close</string>
+    <string name="txtBLesson1Pg1"><b>One [1]</b>\n 一（いち）ichi\n</string>
+    <string name="txtBLesson1Pg1Ex"><b>Example:</b>\n 一年生（いちねんせい）ichinensei\n = First Year Student\n</string>
+    <string name="imgNumOne">Number One</string>
+    <string name="imgOneStudent">One Student</string>
+    <string name="btnForward">Forward</string>
+    <string name="menu_b_lesson1_pg2">Beginner Lesson 1 Pg2</string>
+    <string name="txtBLesson1Pg2"><b>Two [2]</b>\n 二（に）ni\n</string>
+    <string name="txtBLesson1Pg2Ex"><b>Example:</b>\n 二時（にじ）niji\n = Two o\' Clock \n</string>
+    <string name="imgNumTwo">Number Two</string>
+    <string name="imgTwoOClock">Two o\' Clock</string>
+    <string name="menu_b_lesson1_pg3">Beginner Lesson 1 Pg3</string>
+    <string name="txtBLesson1Pg3"><b>Three [3]</b>\n 三（さん）san\n</string>
+    <string name="txtBLesson1Pg3Ex"><b>Example:</b>\n 三人（さんにん）sannin\n = Three Person\n</string>
+    <string name="imgNumThree">Number Three</string>
+    <string name="imgThreePerson">Three Person</string>
+    <string name="menu_b_lesson1_pg4">Beginner Lesson 1 Pg4</string>
+    <string name="txtBLesson1Pg4"><b>Four [4]</b>\n 四（し／よん）shi/ yon\n</string>
+    <string name="txtBLesson1Pg4Ex"><b>Example:</b>\n 四月（しがつ）shigatsu\n = April\n</string>
+    <string name="imgNumFour">Number Four</string>
+    <string name="imgApril">April</string>
+    <string name="menu_b_lesson1_pg5">Beginner Lesson 1 Pg5</string>
+    <string name="txtBLesson1Pg5"><b>Five [5]</b>\n 五（ご）go\n</string>
+    <string name="txtBLesson1Pg5Ex"><b>Example:</b>\n 五円（ごえん）goen\n = Five Yen\n</string>
+    <string name="imgNumFive">Number Five</string>
+    <string name="imgFiveYen">Five Yen</string>
+    <string name="menu_b_lesson1_end">Ending of Beginner Lesson 1</string>
+    <string name="txtBLesson1End"><b>You have completed \nlesson 1!!</b>\n\n Click below to continue to</string>
+    <string name="linkToExercise1">\n<u>Exercise 1</u>\n</string>
+
+    <string name="menu_b_exercise1">Beginner Exericse 1</string>
 </resources>

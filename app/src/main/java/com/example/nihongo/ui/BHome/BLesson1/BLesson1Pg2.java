@@ -13,16 +13,16 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import com.example.nihongo.R;
-import com.example.nihongo.databinding.FragmentBLesson1Binding;
+import com.example.nihongo.databinding.FragmentBLesson1Pg2Binding;
 
-public class BLesson1 extends Fragment {
+public class BLesson1Pg2 extends Fragment {
 
-    private FragmentBLesson1Binding binding;
+    private FragmentBLesson1Pg2Binding binding;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentBLesson1Binding.inflate(inflater, container, false);
+        binding = FragmentBLesson1Pg2Binding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
@@ -39,13 +39,13 @@ public class BLesson1 extends Fragment {
         ImageView btnBack = binding.btnBack;
         btnBack.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(view);
-            navController.navigate(R.id.BLessonsFragment);
+            navController.navigate(R.id.BLesson1Fragment);
         });
 
         ImageView btnForward = binding.btnForward;
         btnForward.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(view);
-            navController.navigate(R.id.BLesson1Pg2Fragment);
+            navController.navigate(R.id.BLesson1Pg3Fragment);
         });
     }
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.BHome.BLesson1.BLesson1">
+    tools:context=".ui.BHome.BLesson1.BLesson1End">
 
     <ImageView
         android:id="@+id/btnClose"
@@ -23,7 +23,7 @@
     </ImageView>
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/bLesson1CardView"
+        android:id="@+id/bLesson1EndCardView"
         android:layout_width="350dp"
         android:layout_height="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,45 +44,26 @@
                 android:padding="14dp">
 
                 <TextView
-                    android:id="@+id/txtBLesson1Pg1"
+                    android:id="@+id/txtBLesson1End"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/txtBLesson1Pg1"
+                    android:text="@string/txtBLesson1End"
                     android:textAlignment="center"
                     android:textSize="26sp" />
 
                 <TextView
-                    android:id="@+id/txtBLesson1Pg1Ex"
+                    android:id="@+id/linkToExercise1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/txtBLesson1Pg1Ex"
+                    android:clickable="true"
+                    android:text="@string/linkToExercise1"
+                    android:textColor="#0000FF"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/imgNumOne"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginEnd="10dp"
-                        android:contentDescription="@string/imgNumOne"
-                        app:srcCompat="@drawable/numberone"></ImageView>
-
-                    <ImageView
-                        android:id="@+id/imgOneStudent"
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
-                        android:contentDescription="@string/imgOneStudent"
-                        app:srcCompat="@drawable/onestudent"></ImageView>
-                </LinearLayout>
+                    android:textSize="24sp"
+                    android:focusable="true" />
             </LinearLayout>
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
 
     <LinearLayout
         android:id="@+id/naviButtons"
@@ -92,28 +73,19 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingTop="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/bLesson1CardView"
-        app:layout_constraintStart_toStartOf="@+id/bLesson1CardView"
-        app:layout_constraintTop_toBottomOf="@+id/bLesson1CardView">
+        app:layout_constraintEnd_toEndOf="@+id/bLesson1EndCardView"
+        app:layout_constraintStart_toStartOf="@+id/bLesson1EndCardView"
+        app:layout_constraintTop_toBottomOf="@+id/bLesson1EndCardView">
 
         <ImageView
             android:id="@+id/btnBack"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginEnd="225dp"
+            android:layout_marginEnd="270dp"
             android:clickable="true"
             android:contentDescription="@string/btnBack"
             android:focusable="true"
             app:srcCompat="@drawable/ic_arrow_back"></ImageView>
-
-        <ImageView
-            android:id="@+id/btnForward"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:clickable="true"
-            android:contentDescription="@string/btnForward"
-            android:focusable="true"
-            app:srcCompat="@drawable/ic_arrow_forward"></ImageView>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
