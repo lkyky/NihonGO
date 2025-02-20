@@ -32,9 +32,6 @@ public class BLessonsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
 
-        BHomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(BHomeViewModel.class);
-
         MaterialCardView lessonsCard = binding.btnBLesson1;
         lessonsCard.setOnClickListener(v -> {
             Bundle bundle = new Bundle();

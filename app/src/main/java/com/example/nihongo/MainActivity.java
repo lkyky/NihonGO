@@ -1,7 +1,7 @@
 package com.example.nihongo;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
@@ -13,7 +13,7 @@ import com.example.nihongo.databinding.ActivityMainBinding;
 public class MainActivity extends BaseActivity {
 
     private ActivityMainBinding binding;
-    private String userCourseType;
+    private NavController navController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,47 +26,46 @@ public class MainActivity extends BaseActivity {
         getSupportActionBar().setLogo(R.mipmap.ic_launcher_nihongo);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
-        userCourseType = getIntent().getStringExtra("course");
-        Log.d("MainActivity", "Course Type: " + userCourseType);
+        setUpNavigation();
+    }
 
-        Bundle args  = new Bundle();
-        args.putString("courseType", userCourseType);
-
+    private void setUpNavigation() {
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.nav_host_fragment_activity_main);
-        NavController navController = navHostFragment.getNavController();
-
-        navController.setGraph(R.navigation.mobile_navigation, args);
-        Log.d("MainActivity", "Navigation Graph Arguments: " + args);
+        navController = navHostFragment.getNavController();
 
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.Bhome, R.id.Thome, R.id.nav_kana_chart, R.id.nav_profile,
+                R.id.nav_home, R.id.nav_kana_chart, R.id.nav_profile,
                 R.id.BLessonsFragment, R.id.BExercisesFragment, R.id.BVideosFragment,
                 R.id.TLessonsFragment, R.id.TExercisesFragment, R.id.TVideosFragment)
                 .build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        binding.navView.setOnItemSelectedListener(item -> {
+        binding.navView.setOnItemSelectedListener(item -> navigateToSelectedFragment(item.getItemId()));
+    }
 
-            int itemId = item.getItemId();
+    private boolean navigateToSelectedFragment(int itemId){
+        if (itemId == R.id.nav_home) {
+            SharedPreferences sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE);
+            String courseType = sharedPreferences.getString("courseType", "Beginner");
 
-            if (itemId == R.id.nav_home){
-                if ("Beginner".equalsIgnoreCase(userCourseType)) {
-                    navController.navigate(R.id.Bhome);
-                } else {
-                    navController.navigate(R.id.Thome);
-                }
-                return true;
+            int currentDestinationId = navController.getCurrentDestination().getId();
+
+            if ("Traveler".equals(courseType) && currentDestinationId != R.id.Thome) {
+                navController.navigate(R.id.Thome);
+            } else {
+                navController.navigate(R.id.nav_home);
             }
-            else if(itemId == R.id.nav_kana_chart) {
-                navController.navigate(R.id.nav_kana_chart);
-                return true;
-            }
-            else if (itemId == R.id.nav_profile) {
-                navController.navigate(R.id.nav_profile);
-                return true;
-            }
-            return false;
-        });
+            return true;
+        }
+        else if (itemId == R.id.nav_kana_chart) {
+            navController.navigate(R.id.nav_kana_chart);
+            return true;
+        }
+        else if (itemId == R.id.nav_profile) {
+            navController.navigate(R.id.nav_profile);
+            return true;
+        }
+        return false;
     }
 }

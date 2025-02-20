@@ -12,12 +12,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProvider;
 
 import com.example.nihongo.R;
-import com.example.nihongo.databinding.FragmentProfileBinding;
 import com.example.nihongo.login;
-import com.google.firebase.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -40,7 +37,6 @@ public class ProfileFragment extends Fragment {
         txtUsername = view.findViewById(R.id.txtUsername);
         txtEmail = view.findViewById(R.id.txtEmail);
         txtBirthdate = view.findViewById(R.id.txtBirthdate);
-        txtCourse = view.findViewById(R.id.txtCourse);
         btnLogout = view.findViewById(R.id.btnLogout);
 
         loadUserData();
@@ -66,12 +62,10 @@ public class ProfileFragment extends Fragment {
                         String username = documentSnapshot.getString("username");
                         String email = documentSnapshot.getString("email");
                         String birthdate = documentSnapshot.getString("birthdate");
-                        String course = documentSnapshot.getString("course");
 
                         txtUsername.setText("Username: " + username);
                         txtEmail.setText("Email: " + email);
                         txtBirthdate.setText("Birth Date: " + birthdate);
-                        txtCourse.setText("Selected Course: " + course);
                     }
                     else{
                         Toast.makeText(getContext(), "User data not found!", Toast.LENGTH_SHORT).show();

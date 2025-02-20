@@ -114,6 +114,9 @@
     <string name="menu_b_lesson1_end">Ending of Beginner Lesson 1</string>
     <string name="txtBLesson1End"><b>You have completed \nlesson 1!!</b>\n\n Click below to continue to</string>
     <string name="linkToExercise1">\n<u>Exercise 1</u>\n</string>
-
-    <string name="menu_b_exercise1">Beginner Exericse 1</string>
+    <string name="menu_b_exercise1">Beginner Exercise 1</string>
+    <string name="txtBExercise1Pg1">Question 1\n \n What is the Japanese word for <b>\'one\'</b>?\n</string>
+    <string name="radBExercise1Pg1C1">二（に）</string>
+    <string name="radBExercise1Pg1C2">一（いち）</string>
+    <string name="radBExercise1Pg1C3">三（さん）</string>
 </resources>

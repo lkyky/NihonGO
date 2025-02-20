@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,7 +18,6 @@ public class signup extends BaseActivity {
     private FirebaseAuth auth;
     private FirebaseFirestore db;
     private EditText emailInput, birthdateInput, passwordInputSU, usernameInputSU;
-    private Spinner courseSelect;
     private Button btnCreateAcc;
     private TextView linkLogin;
 
@@ -38,7 +36,6 @@ public class signup extends BaseActivity {
         birthdateInput = findViewById(R.id.birthdateInput);
         passwordInputSU = findViewById(R.id.passwordInputSU);
         usernameInputSU = findViewById(R.id.usernameInputSU);
-        courseSelect = findViewById(R.id.courseSelect);
         btnCreateAcc = findViewById(R.id.btnCreateAcc);
         linkLogin = findViewById(R.id.linkLogin);
 
@@ -47,7 +44,6 @@ public class signup extends BaseActivity {
             String password = passwordInputSU.getText().toString().trim();
             String username = usernameInputSU.getText().toString().trim();
             String birthdate = birthdateInput.getText().toString().trim();
-            String course = courseSelect.getSelectedItem().toString();
 
             if(email.isEmpty() || password.isEmpty() || username.isEmpty() || birthdate.isEmpty()){
                 Toast.makeText(this, "Please fill out all fields.", Toast.LENGTH_SHORT).show();
@@ -62,7 +58,6 @@ public class signup extends BaseActivity {
                             userData.put("email", email);
                             userData.put("username", username);
                             userData.put("birthdate", birthdate);
-                            userData.put("course", course);
 
                             db.collection("users").document(userId)
                                     .set(userData)

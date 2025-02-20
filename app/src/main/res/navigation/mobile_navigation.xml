@@ -7,31 +7,23 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.nihongo.ui.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
-        <argument
-            android:name="courseType"
-            app:argType="string" />
-        <action
-            android:id="@+id/action_home_to_Bhome"
-            app:destination="@id/Bhome" />
-        <action
-            android:id="@+id/action_home_to_Thome"
-            app:destination="@id/Thome" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/Bhome"
         android:name="com.example.nihongo.ui.BHome.BHomeFragment"
         android:label="@string/menu_b_home"
-        tools:layout="@layout/fragment_b_home" />
+        tools:layout="@layout/fragment_b_home">
+        <action
+            android:id="@+id/action_BHome_to_THome"
+            app:destination="@id/Thome"/>
+    </fragment>
 
     <fragment
         android:id="@+id/Thome"
         android:name="com.example.nihongo.ui.THome.THomeFragment"
         android:label="@string/menu_t_home"
-        tools:layout="@layout/fragment_t_home" />
+        tools:layout="@layout/fragment_t_home">
+        <action
+            android:id="@+id/action_THome_to_BHome"
+            app:destination="@id/nav_home"/>
+    </fragment>
 
     <fragment
         android:id="@+id/nav_kana_chart"
