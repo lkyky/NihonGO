@@ -2,6 +2,8 @@ package com.example.nihongo.ui.THome;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,15 +15,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.nihongo.R;
+import com.google.android.material.card.MaterialCardView;
 
 public class TVideosFragment extends Fragment {
-
-    private TVideosViewModel mViewModel;
-
-    public static TVideosFragment newInstance() {
-        return new TVideosFragment();
-    }
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
@@ -29,10 +25,27 @@ public class TVideosFragment extends Fragment {
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(TVideosViewModel.class);
-        // TODO: Use the ViewModel
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        MaterialCardView video1Card = view.findViewById(R.id.btnTVideo1);
+        MaterialCardView video2Card = view.findViewById(R.id.btnTVideo2);
+
+        video1Card.setOnClickListener(v -> openYouTubeLink("https://youtu.be/9Jn6AIkd0Pw"));
+        video2Card.setOnClickListener(v -> openYouTubeLink("https://youtu.be/u_cHcefYV-o"));
     }
 
+    private void openYouTubeLink(String url){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        intent.setPackage("com.android.chrome");
+
+        if (intent.resolveActivity(requireActivity().getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+            startActivity(webIntent);
+        }
+    }
 }

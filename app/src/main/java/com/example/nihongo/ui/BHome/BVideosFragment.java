@@ -35,15 +35,14 @@ public class BVideosFragment extends Fragment {
     private void openYouTubeLink(String url){
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.setPackage("com.google.android.youtube");
 
-        if(intent.resolveActivity(requireActivity().getPackageManager()) != null){
+        intent.setPackage("com.android.chrome");
+
+        if (intent.resolveActivity(requireActivity().getPackageManager()) != null) {
             startActivity(intent);
-        }
-        else{
+        } else {
             Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             startActivity(webIntent);
         }
     }
-
 }

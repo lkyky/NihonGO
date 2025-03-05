@@ -1,4 +1,4 @@
-package com.example.nihongo.ui.BHome;
+package com.example.nihongo.ui.BLesson2;
 
 import androidx.lifecycle.ViewModel;
 

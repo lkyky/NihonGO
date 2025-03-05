@@ -1,4 +1,4 @@
-package com.example.nihongo.ui.BHome;
+package com.example.nihongo.ui.BLesson2;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -14,24 +14,24 @@ import android.view.ViewGroup;
 
 import com.example.nihongo.R;
 
-public class BLesson2 extends Fragment {
+public class BLesson2Pg6 extends Fragment {
 
-    private BLesson2ViewModel mViewModel;
+    private BLesson2Pg6ViewModel mViewModel;
 
-    public static BLesson2 newInstance() {
-        return new BLesson2();
+    public static BLesson2Pg6 newInstance() {
+        return new BLesson2Pg6();
     }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_b_lesson2, container, false);
+        return inflater.inflate(R.layout.fragment_b_lesson2_pg6, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(BLesson2ViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(BLesson2Pg6ViewModel.class);
         // TODO: Use the ViewModel
     }
 
