@@ -156,4 +156,34 @@
         android:name="com.example.nihongo.ui.ScoreFragment"
         android:label="@string/menu_score"/>
 
+    <fragment
+        android:id="@+id/TLesson1Fragment"
+        android:name="com.example.nihongo.ui.THome.TLesson1.TLesson1"
+        android:label="@string/menu_t_lesson1_pg1"/>
+
+    <fragment
+        android:id="@+id/TLesson1Pg2Fragment"
+        android:name="com.example.nihongo.ui.THome.TLesson1.TLesson1Pg2"
+        android:label="@string/menu_t_lesson1_pg2"/>
+
+    <fragment
+        android:id="@+id/TLesson1Pg3Fragment"
+        android:name="com.example.nihongo.ui.THome.TLesson1.TLesson1Pg3"
+        android:label="@string/menu_t_lesson1_pg3"/>
+
+    <fragment
+        android:id="@+id/TLesson1Pg4Fragment"
+        android:name="com.example.nihongo.ui.THome.TLesson1.TLesson1Pg4"
+        android:label="@string/menu_t_lesson1_pg4"/>
+
+    <fragment
+        android:id="@+id/TLesson1Pg5Fragment"
+        android:name="com.example.nihongo.ui.THome.TLesson1.TLesson1Pg5"
+        android:label="@string/menu_t_lesson1_pg5"/>
+
+    <fragment
+        android:id="@+id/TLesson1EndFragment"
+        android:name="com.example.nihongo.ui.THome.TLesson1.TLesson1End"
+        android:label="@string/menu_t_lesson1_end"/>
+
 </navigation>

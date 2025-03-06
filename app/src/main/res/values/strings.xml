@@ -154,4 +154,32 @@
     <string name="txtTVideoDesc1">In this video, you will see an real life example of how to ask train directions using Japanese.</string>
     <string name="txtTVideo2">At a Convenience Store</string>
     <string name="txtTVideoDesc2">In this video, you will get to experience a convenience store situation in Japan.</string>
+    <string name="menu_t_lesson1_pg1">Traveler Lesson 1 Pg1</string>
+    <string name="txtTLesson1Pg1"><b>Hello</b>\n こんにちは Konnichiwa\n</string>
+    <string name="txtTLesson1Pg1Ex"><b>Example:</b>\n こんにちは！元気ですか？\n (Konnichiwa! Genki desu ka?)\n = Hello! How are you?\n</string>
+    <string name="imgHello">Hello</string>
+    <string name="menu_t_lesson1_pg2">Traveler Lesson 1 Pg2</string>
+    <string name="txtTLesson1Pg2"><b>Good Morning</b>\n おはようございます Ohayou gozaimasu</string>
+    <string name="txtTLesson1Pg2Ex"><b>Example:</b>\n おはようございます。今日はいい天気ですね。\n (Ohayou gozaimasu. Kyou wa ii tenki desu ne.)\n = Good morning. The weather is nice today, isn’t it?</string>
+    <string name="imgGoodmorning">Hello</string>
+    <string name="menu_t_lesson1_pg3">Traveler Lesson 1 Pg3</string>
+    <string name="txtTLesson1Pg3"><b>Thank you(very much)</b>\n ありがとうございます Arigatou gozaimasu\n</string>
+    <string name="txtTLesson1Pg3Ex"><b>Example:</b>\n ありがとう！助かりました！ \n (Arigatou! Tasukarimashita!) )\n = Thank you! That really helped!\n</string>
+    <string name="imgThankyou">Thank you</string>
+    <string name="menu_t_lesson1_pg4">Traveler Lesson 1 Pg4</string>
+    <string name="txtTLesson1Pg4"><b>Excuse me/ Sorry</b>\n すみません Sumimasen\n</string>
+    <string name="txtTLesson1Pg4Ex"><b>Example:</b>\n すみません、道を教えてください。 \n (Sumimasen, michi o oshiete kudasai. )\n = Excuse me, can you tell me the way?</string>
+    <string name="imgExcuseme">Excuse me</string>
+    <string name="menu_t_lesson1_pg5">Traveler Lesson 1 Pg5</string>
+    <string name="txtTLesson1Pg5"><b>Please</b>\n お願いします Onegai shimasu\n</string>
+    <string name="txtTLesson1Pg5Ex"><b>Example:</b>\n メニューをお願いします。\n (Menyuu o onegai shimasu.)\n = The menu, please.\n</string>
+    <string name="imgPlease">Please</string>
+    <string name="menu_t_lesson1_end">End of Traveler Lesson 1</string>
+    <string name="txtTLesson1End"><b>You have completed \n lesson 1!!</b>\n\n Click below to continue to</string>
+    <string name="linktoTExercise1">\n<u>Traveler Exercise 1</u>\n</string>
+    <string name="txtTLessons">Traveler Lessons</string>
+    <string name="txtTLesson1"><b>Lesson 1 - \n Basic Greetings</b></string>
+    <string name="txtTLessonDesc1">In this lesson, you will get to learn the greetings used in Japanese.</string>
+    <string name="txtTLesson2"><b>Lesson 2 - \n Getting Around (Directions)</b></string>
+    <string name="txtTLessonDesc2">In this lesson, you will learn how to ask basic directions.</string>
 </resources>
