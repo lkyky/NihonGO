@@ -69,6 +69,8 @@ public class LessonReadyFragment extends Fragment {
                 return R.id.BLesson2Fragment;
             case "TLesson1":
                 return R.id.TLesson1Fragment;
+            case "TLesson2":
+                return R.id.TLesson2Fragment;
             default:
                 return 0;
         }

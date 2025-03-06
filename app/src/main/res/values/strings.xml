@@ -182,4 +182,28 @@
     <string name="txtTLessonDesc1">In this lesson, you will get to learn the greetings used in Japanese.</string>
     <string name="txtTLesson2"><b>Lesson 2 - \n Getting Around (Directions)</b></string>
     <string name="txtTLessonDesc2">In this lesson, you will learn how to ask basic directions.</string>
+    <string name="menu_t_lesson2_pg1">Traveler Lesson 2 Pg1</string>
+    <string name="txtTLesson2Pg1"><b>Where</b>\n どこ doko\n</string>
+    <string name="txtTLesson2Pg1Ex"><b>Example:</b>\n ここはどこですか？\n (Koko wa doko desu ka?)\n = Where is this place? / Where am I?</string>
+    <string name="imgWhere">Where</string>
+    <string name="menu_t_lesson2_pg2">Traveler Lesson 2 Pg2</string>
+    <string name="txtTLesson2Pg2"><b>Train station</b>\n 駅前（えき） eki\n</string>
+    <string name="txtTLesson2Pg2Ex"><b>Example:</b>\n それは駅（えき）ですか？ \n (Sore wa eki desu ka?)\n = Is that the train station?\n</string>
+    <string name="imgTrainstation">Train station</string>
+    <string name="menu_t_lesson2_pg3">Traveler Lesson 2 Pg3</string>
+    <string name="txtTLesson2Pg3"><b>Bus station</b>\n バス停（バステイ） basutei\n</string>
+    <string name="txtTLesson2Pg3Ex"><b>Example:</b>\n バス停は近いですか？ \n (Basutei wa chikai desu ka?) )\n = Is the bus stop nearby?\n</string>
+    <string name="imgBusstop">Bus stop</string>
+    <string name="menu_t_lesson2_pg4">Traveler Lesson 2 Pg4</string>
+    <string name="txtTLesson2Pg4"><b>Toilet</b>\n トイレ toire\n</string>
+    <string name="txtTLesson2Pg4Ex"><b>Example:</b>\n トイレはあそこです。\n (Toire wa asoko desu.)\n = The toilet is over there.\n</string>
+    <string name="imgToilet">Toilet</string>
+    <string name="menu_t_lesson2_pg5">Traveler Lesson 2 Pg5</string>
+    <string name="txtTLesson2Pg5"><b>Where is the <u>toilet</u>?</b>\n <u>トイレ</u>はどこですか。 <u>Toire</u> wa doko desuka?\n</string>
+    <string name="txtTLesson2Pg5Ex">You may change the underlined words to any places you wish.\n</string>
+    <string name="imgToilet2">Toilet</string>
+    <string name="imgQuestionmark">Question Mark</string>
+    <string name="menu_t_lesson2_end">End of Traveler Lesson 2</string>
+    <string name="txtTLesson2End"><b>You have completed \n lesson 2!!</b>\n\n Click below to continue to</string>
+    <string name="linktoTExercise2">\n<u>Traveler Exercise 2</u>\n</string>
 </resources>
