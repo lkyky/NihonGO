@@ -113,7 +113,47 @@
 
     <fragment
         android:id="@+id/BLesson2Fragment"
-        android:name="com.example.nihongo.ui.BHome.BLesson2"
+        android:name="com.example.nihongo.ui.BLesson2.BLesson2"
         android:label="@string/menu_b_lesson2"/>
+
+    <fragment
+        android:id="@+id/BLesson2Pg2Fragment"
+        android:name="com.example.nihongo.ui.BLesson2.BLesson2Pg2"
+        android:label="@string/menu_b_lesson2_pg2"/>
+
+    <fragment
+        android:id="@+id/BLesson2Pg3Fragment"
+        android:name="com.example.nihongo.ui.BLesson2.BLesson2Pg3"
+        android:label="@string/menu_b_lesson2_pg3"/>
+
+    <fragment
+        android:id="@+id/BLesson2Pg4Fragment"
+        android:name="com.example.nihongo.ui.BLesson2.BLesson2Pg4"
+        android:label="@string/menu_b_lesson2_pg4"/>
+
+    <fragment
+        android:id="@+id/BLesson2Pg5Fragment"
+        android:name="com.example.nihongo.ui.BLesson2.BLesson2Pg5"
+        android:label="@string/menu_b_lesson2_pg5"/>
+
+    <fragment
+        android:id="@+id/BLesson2Pg6Fragment"
+        android:name="com.example.nihongo.ui.BLesson2.BLesson2Pg6"
+        android:label="@string/menu_b_lesson2_pg6"/>
+
+    <fragment
+        android:id="@+id/BLesson2EndFragment"
+        android:name="com.example.nihongo.ui.BLesson2.BLesson2End"
+        android:label="@string/menu_b_lesson2_end"/>
+
+    <fragment
+        android:id="@+id/BExercise2Fragment"
+        android:name="com.example.nihongo.ui.BHome.BExercise2"
+        android:label="@string/txtBExercise2"/>
+
+    <fragment
+        android:id="@+id/ScoreFragment"
+        android:name="com.example.nihongo.ui.ScoreFragment"
+        android:label="@string/menu_score"/>
 
 </navigation>

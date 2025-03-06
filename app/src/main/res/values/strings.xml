@@ -78,7 +78,7 @@
     <string name="txtBVideo1"><b>Introduction to Particles（助詞）</b></string>
     <string name="txtBVideoDesc1">In this video, you will get to know the common particles used in Japanese.</string>
     <string name="txtBVideo2"><b>I am/ I am not/ ...（は／です／ですか／…）</b></string>
-    <string name="txtBVideoDesc2">In this video, </string>
+    <string name="txtBVideoDesc2">In this video, you will learn basic grammar in Japanese.</string>
     <string name="menu_lesson_ready">Lesson Ready</string>
     <string name="txtLessonReady">Are you ready to learn?</string>
     <string name="btnNotReady">NO!</string>
@@ -111,12 +111,47 @@
     <string name="txtBLesson1Pg5Ex"><b>Example:</b>\n 五円（ごえん）goen\n = Five Yen\n</string>
     <string name="imgNumFive">Number Five</string>
     <string name="imgFiveYen">Five Yen</string>
-    <string name="menu_b_lesson1_end">Ending of Beginner Lesson 1</string>
+    <string name="menu_b_lesson1_end">End of Beginner Lesson 1</string>
     <string name="txtBLesson1End"><b>You have completed \nlesson 1!!</b>\n\n Click below to continue to</string>
     <string name="linkToExercise1">\n<u>Exercise 1</u>\n</string>
+    <string name="txtBLesson2Pg1"><b>Father</b>\n お父さん（おとうさん）otousan\n</string>
+    <string name="txtBLesson2Pg1Ex"><b>Example:</b>\n お父さん（おとうさん）、こんにちは!\n Otousan, konnichiwa!\n = Hello, Dad!\n</string>
+    <string name="imgFather">Father</string>
+    <string name="menu_b_lesson2_pg2">Beginner Lesson 2 Pg2</string>
+    <string name="txtBLesson2Pg2"><b>Mother</b>\n お母さん （おかあさん）okaasan\n</string>
+    <string name="txtBLesson2Pg2Ex"><b>Example:</b>\n お母さん （おかあさん）、おはよう!\n Okaasan, ohayou!\n = Good morning, Mom!\n</string>
+    <string name="imgMother">Mother</string>
+    <string name="menu_b_lesson2_pg3">Beginner Lesson 2 Pg3</string>
+    <string name="txtBLesson2Pg3"><b>Big brother</b>\n お兄さん （おにいさん）oniisan\n</string>
+    <string name="txtBLesson2Pg3Ex"><b>Example:</b>\n お兄さん （おにいさん）、ありがとう!\n Oniisan, arigatou!\n = Thanks, big brother!</string>
+    <string name="imgBigBrother">Big Brother</string>
+    <string name="menu_b_lesson2_pg4">Beginner Lesson 2 Pg4</string>
+    <string name="txtBLesson2Pg4"><b>Big sister:</b>\n お姉さん　（おねえさん）oneesan\n</string>
+    <string name="txtBLesson2Pg4Ex"><b>Example:</b>\n お姉さん　（おねえさん）、おやすみなさい!\n Oneesan, oyasuminasai!\n = Good night, big sister!</string>
+    <string name="imgBigSister">Big Sister</string>
+    <string name="menu_b_lesson2_pg5">Beginner Lesson 2 Pg5</string>
+    <string name="txtBLesson2Pg5"><b>Little brother</b>\n 弟 （おとうと）otouto\n</string>
+    <string name="txtBLesson2Pg5Ex"><b>Example:</b>\n 弟（おとうと）はゲームが好きです\n Otouto wa geemu ga suki desu.\n = My younger brother likes games.</string>
+    <string name="imgLittleBrother">Little Brother</string>
+    <string name="menu_b_lesson2_pg6">Beginner Lesson 2 Pg6</string>
+    <string name="txtBLesson2Pg6"><b>Little sister</b>\n 妹 （いもうと） imouto\n</string>
+    <string name="txtBLesson2Pg6Ex"><b>Example:</b>\n 妹（いもうと）はかわいいです!\n Imouto wa kawaii desu!\n = My little sister is cute!</string>
+    <string name="imgLittleSister">Little Sister</string>
+    <string name="menu_b_lesson2_end">End of Beginner Lesson 2</string>
+    <string name="txtBLesson2End"><b>You have completed \nlesson 2!!</b>\n\n Click below to continue to</string>
+    <string name="linkToExercise2">\n<u>Exercise 2</u>\n</string>
     <string name="menu_b_exercise1">Beginner Exercise 1</string>
-    <string name="txtBExercise1Pg1">Question 1\n \n What is the Japanese word for <b>\'one\'</b>?\n</string>
-    <string name="radBExercise1Pg1C1">二（に）</string>
-    <string name="radBExercise1Pg1C2">一（いち）</string>
-    <string name="radBExercise1Pg1C3">三（さん）</string>
+    <string name="txtBExercise1Pg1"><b>Beginner Exercise 1</b></string>
+    <string name="btnSubmit">Submit Answers</string>
+    <string name="txtResult"></string>
+    <string name="menu_score">Score</string>
+    <string name="txtScore">Keep it up !</string>
+    <string name="txtFinalScore"></string>
+    <string name="menu_b_exercise2">Beginner Exercise 2</string>
+    <string name="txtBExercise2Pg1">Beginner Exercise 2</string>
+    <string name="txtTVideos">Traveler Videos</string>
+    <string name="txtTVideo1">Asking Train Directions</string>
+    <string name="txtTVideoDesc1">In this video, you will see an real life example of how to ask train directions using Japanese.</string>
+    <string name="txtTVideo2">At a Convenience Store</string>
+    <string name="txtTVideoDesc2">In this video, you will get to experience a convenience store situation in Japan.</string>
 </resources>
