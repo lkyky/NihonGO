@@ -40,7 +40,7 @@ public class BLesson1End extends Fragment {
         ImageView btnBack = binding.btnBack;
         btnBack.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(view);
-            navController.navigate(R.id.BLesson1Pg4Fragment);
+            navController.navigate(R.id.BLesson1Pg5Fragment);
         });
 
         TextView btnForward = binding.linkToExercise1;

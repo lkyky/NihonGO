@@ -1,38 +1,52 @@
 package com.example.nihongo.ui.BLesson2;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 
 import com.example.nihongo.R;
+import com.example.nihongo.databinding.FragmentBLesson2Pg2Binding;
 
 public class BLesson2Pg2 extends Fragment {
 
-    private BLesson2Pg2ViewModel mViewModel;
+    private FragmentBLesson2Pg2Binding binding;
 
-    public static BLesson2Pg2 newInstance() {
-        return new BLesson2Pg2();
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        binding = FragmentBLesson2Pg2Binding.inflate(inflater, container, false);
+        return binding.getRoot();
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_b_lesson2_pg2, container, false);
-    }
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(BLesson2Pg2ViewModel.class);
-        // TODO: Use the ViewModel
+        ImageView btnClose = binding.btnClose;
+        btnClose.setOnClickListener(v -> {
+            NavController navController = Navigation.findNavController(view);
+            navController.navigate(R.id.BLessonsFragment);
+        });
+
+        ImageView btnBack = binding.btnBack;
+        btnBack.setOnClickListener(v -> {
+            NavController navController = Navigation.findNavController(view);
+            navController.navigate(R.id.BLesson2Fragment);
+        });
+
+        ImageView btnForward = binding.btnForward;
+        btnForward.setOnClickListener(v -> {
+            NavController navController = Navigation.findNavController(view);
+            navController.navigate(R.id.BLesson2Pg3Fragment);
+        });
     }
 
 }
