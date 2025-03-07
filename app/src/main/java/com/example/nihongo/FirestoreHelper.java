@@ -63,16 +63,26 @@ public class FirestoreHelper {
                         new Question("How do you write 'hello' in Japanese?",
                                 Arrays.asList("こんにちは", "ありがとう", "さようなら"), "こんにちは"),
                         new Question("What does 'ありがとう' mean?",
-                                Arrays.asList("Goodbye", "Thank you", "Excuse me"), "Thank you")
+                                Arrays.asList("Goodbye", "Thank you", "Excuse me"), "Thank you"),
+                        new Question("What does 'おはようございます' mean?",
+                                Arrays.asList("Good morning", "Good night", "Hello"), "Good morning"),
+                        new Question("What is 'please' in Japanese?",
+                                Arrays.asList("すみません", "お願いします", "ありがとう"), "お願いします"),
+                        new Question("What is 'excuse me' in Japanese?",
+                                Arrays.asList("こんにちは", "さようなら ", "すみません"), "すみません")
                 );
                 break;
 
             case "TExercise2":
                 questionList = Arrays.asList(
-                        new Question("How do you write 'excuse me' in Japanese?",
-                                Arrays.asList("すみません", "こんにちは", "ありがとう"), "すみません"),
-                        new Question("What does 'さようなら' mean?",
-                                Arrays.asList("Good morning", "See you", "Goodbye"), "Goodbye")
+                        new Question("How do you write 'where' in Japanese?",
+                                Arrays.asList("バステイ", "どこ", "えき"), "どこ"),
+                        new Question("What does 'バス停（バステイ）' mean?",
+                                Arrays.asList("Bus stop", "Train station", "School"), "Bus stop"),
+                        new Question("What does '駅前（えき）' mean?",
+                                Arrays.asList("Bus stop", "Train station", "School"), "Train station"),
+                        new Question("What is 'toilet' in Japanese?",
+                                Arrays.asList("バステイ", "がっこう", "トイレ"), "トイレ")
                 );
                 break;
         }

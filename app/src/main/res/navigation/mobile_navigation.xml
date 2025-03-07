@@ -216,4 +216,14 @@
         android:name="com.example.nihongo.ui.THome.TLesson2.TLesson2End"
         android:label="@string/menu_t_lesson2_end"/>
 
+    <fragment
+        android:id="@+id/TExercise1Fragment"
+        android:name="com.example.nihongo.ui.THome.TExercise1"
+        android:label="@string/menu_t_exercise1"/>
+
+    <fragment
+        android:id="@+id/TExercise2Fragment"
+        android:name="com.example.nihongo.ui.THome.TExercise2"
+        android:label="@string/menu_t_exercise2"/>
+
 </navigation>

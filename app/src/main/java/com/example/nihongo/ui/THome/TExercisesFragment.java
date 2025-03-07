@@ -1,38 +1,59 @@
 package com.example.nihongo.ui.THome;
 
-import androidx.lifecycle.ViewModelProvider;
-
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+
 import com.example.nihongo.R;
+import com.example.nihongo.databinding.FragmentBExercisesBinding;
+import com.example.nihongo.databinding.FragmentTExercisesBinding;
+import com.google.android.material.card.MaterialCardView;
 
 public class TExercisesFragment extends Fragment {
 
-    private TExercisesViewModel mViewModel;
+    private FragmentTExercisesBinding binding;
 
-    public static TExercisesFragment newInstance() {
-        return new TExercisesFragment();
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             ViewGroup container, Bundle savedInstanceState) {
+        binding = FragmentTExercisesBinding.inflate(inflater, container, false);
+        return binding.getRoot();
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
-                             @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_t_exercises, container, false);
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
+        super.onViewCreated(view, savedInstanceState);
+
+        MaterialCardView lessonsCard = binding.btnTExercise1;
+        lessonsCard.setOnClickListener(v -> {
+            Bundle bundle = new Bundle();
+            bundle.putString("lessonFragment", "TExercise1");
+            NavController navController = Navigation.findNavController(view);
+            navController.navigate(R.id.TExercise1Fragment, bundle);
+            Log.d("Navigation", "Navigating to LessonReadyFragment with TExercise1");
+        });
+
+        MaterialCardView exercisesCard = binding.btnTExercise2;
+        exercisesCard.setOnClickListener(v -> {
+            Bundle bundle = new Bundle();
+            bundle.putString("lessonFragment", "TExercise2");
+            NavController navController = Navigation.findNavController(view);
+            navController.navigate(R.id.TExercise2Fragment, bundle);
+            Log.d("Navigation", "Navigating to LessonReadyFragment with TExercise2");
+        });
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(TExercisesViewModel.class);
-        // TODO: Use the ViewModel
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
     }
-
 }

@@ -206,4 +206,13 @@
     <string name="menu_t_lesson2_end">End of Traveler Lesson 2</string>
     <string name="txtTLesson2End"><b>You have completed \n lesson 2!!</b>\n\n Click below to continue to</string>
     <string name="linktoTExercise2">\n<u>Traveler Exercise 2</u>\n</string>
+    <string name="txtTExercise1Pg1">Traveler Exercise 1</string>
+    <string name="txtTExercise2Pg1">Traveler Exercise 2</string>
+    <string name="txtTExercises">Traveler Exercises</string>
+    <string name="txtTExercise1"><b>Exercise 1 - \n  Basic Greetings</b></string>
+    <string name="txtTExerciseDesc1">In this exercise, you will recall the basic greetings you have learnt in lesson 1.</string>
+    <string name="txtTExercise2"><b>Exercise 2 - \n Getting Around (Directions)</b></string>
+    <string name="txtTExerciseDesc2">In this exercise, you will practice what you have learnt in lesson 2.</string>
+    <string name="menu_t_exercise1">Traveler Exercise 1</string>
+    <string name="menu_t_exercise2">Traveler Exercise 2</string>
 </resources>

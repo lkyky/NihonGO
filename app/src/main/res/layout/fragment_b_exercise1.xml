@@ -45,15 +45,5 @@
                     android:layout_height="wrap_content"
                     android:text="@string/btnSubmit"
                     android:layout_marginTop="10dp"/>
-
-                <TextView
-                    android:id="@+id/txtResult"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:visibility="gone"
-                    android:layout_marginTop="10dp"/>
-
         </LinearLayout>
 </ScrollView>

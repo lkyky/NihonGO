@@ -44,7 +44,7 @@ public class BExercisesFragment extends Fragment {
         MaterialCardView exercisesCard = binding.btnBExercise2;
         exercisesCard.setOnClickListener(v -> {
             Bundle bundle = new Bundle();
-            bundle.putString("lessonFragment", "BLesson2");
+            bundle.putString("lessonFragment", "BExercise2");
             NavController navController = Navigation.findNavController(view);
             navController.navigate(R.id.BExercise2Fragment, bundle);
             Log.d("Navigation", "Navigating to LessonReadyFragment with BExercise2");

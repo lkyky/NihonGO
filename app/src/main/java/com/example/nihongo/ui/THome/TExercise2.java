@@ -1,13 +1,11 @@
-package com.example.nihongo.ui.BHome.BExercise1;
+package com.example.nihongo.ui.THome;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
@@ -27,7 +25,7 @@ import com.google.firebase.auth.FirebaseUser;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BExercise1 extends Fragment {
+public class TExercise2 extends Fragment {
 
     private FirestoreHelper firestoreHelper;
     private RecyclerView recyclerView;
@@ -36,12 +34,12 @@ public class BExercise1 extends Fragment {
     private Button btnSubmit;
     private ImageView btnClose;
 
-    public BExercise1() {}
+    public TExercise2() {}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_b_exercise1, container, false);
+        View view = inflater.inflate(R.layout.fragment_t_exercise2, container, false);
 
         recyclerView = view.findViewById(R.id.recyclerViewQuestions);
         btnSubmit = view.findViewById(R.id.btnSubmit);
@@ -49,7 +47,7 @@ public class BExercise1 extends Fragment {
 
         firestoreHelper = new FirestoreHelper();
 
-        firestoreHelper.addExerciseQuestions("BExercise1");
+        firestoreHelper.addExerciseQuestions("TExercise2");
 
         // Setup RecyclerView
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -57,7 +55,7 @@ public class BExercise1 extends Fragment {
         recyclerView.setAdapter(adapter);
 
         // Load Questions Dynamically from Firestore
-        firestoreHelper.getQuestions("BExercise1", questions -> {
+        firestoreHelper.getQuestions("TExercise2", questions -> {
             if (questions != null && !questions.isEmpty()) {
                 questionList.clear();
                 questionList.addAll(questions);
@@ -84,7 +82,7 @@ public class BExercise1 extends Fragment {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             String userId = user.getUid(); // Get current user's unique ID
-            firestoreHelper.storeUserScore(userId, "BExercise1", score);
+            firestoreHelper.storeUserScore(userId, "TExercise2", score);
         } else {
             Toast.makeText(getContext(), "User not logged in!", Toast.LENGTH_SHORT).show();
         }
@@ -94,7 +92,7 @@ public class BExercise1 extends Fragment {
         NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_activity_main);
         Bundle bundle = new Bundle();
         bundle.putInt("score", score);
-        bundle.putString("exerciseId", "BExercise1");
+        bundle.putString("exerciseId", "TExercise2");
         navController.navigate(R.id.ScoreFragment, bundle);
     }
 }
