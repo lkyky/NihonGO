@@ -7,4 +7,14 @@
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
+    <color name="dark_pink">#EC3B5E</color>
+    <color name="pink_1">#F48FB1</color>
+    <color name="pink_2">#FFEEF4</color>
+    <color name="light_pink">#FDE5D7</color>
+    <color name="light_pink_2">#FDF9F7</color>
+    <color name="bottom_nav_bg">#FDE5D7</color>
+    <color name="toolbar_bg">#F48FB1</color>
+    <color name="toolbar_text">#DCDADA</color>
+    <color name="gray_1">#DCDADA</color>
+    <color name="gray_2">#AFAFAF</color>
 </resources>

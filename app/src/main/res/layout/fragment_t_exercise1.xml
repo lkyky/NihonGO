@@ -30,7 +30,8 @@
             android:text="@string/txtTExercise1Pg1"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:paddingBottom="8dp"/>
+            android:paddingBottom="8dp"
+            android:textColor="@color/black"/>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewQuestions"

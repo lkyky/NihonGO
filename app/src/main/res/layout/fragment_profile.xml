@@ -33,34 +33,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imgUserPfp"
         app:layout_constraintVertical_bias="0.22000003">
-        <!--app:cardBackgroundColor="@color/"-->
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:padding="20dp"
+            android:background="@color/pink_2">
 
             <TextView
                 android:id="@+id/txtUsername"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/txtUsername"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/txtEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/txtEmail"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
 
             <TextView
                 android:id="@+id/txtBirthdate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/txtBirthdate"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
@@ -74,6 +77,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/btnLogout"
+        style="@style/ButtonStyle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -17,6 +17,8 @@
         android:text="@string/txtTExercises"
         android:textAlignment="center"
         android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/pink_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,8 +42,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <!--android:background="@drawable/">-->
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebackgroundfour">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -56,7 +58,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/txtTExercise1"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_pink"/>
 
                 <TextView
                     android:id="@+id/txtTExerciseDesc1"
@@ -64,7 +67,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/txtTExerciseDesc1"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
             </LinearLayout>
         </RelativeLayout>
@@ -87,8 +91,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <!--android:background="@drawable/">-->
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebackgroundfour">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -103,7 +107,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/txtTExercise2"
                     android:textAlignment="center"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_pink"/>
 
                 <TextView
                     android:id="@+id/txtTExerciseDesc2"
@@ -111,7 +116,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/txtTExerciseDesc2"
                     android:textAlignment="center"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
 
             </LinearLayout>
         </RelativeLayout>

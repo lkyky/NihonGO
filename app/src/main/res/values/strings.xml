@@ -150,13 +150,13 @@
     <string name="menu_b_exercise2">Beginner Exercise 2</string>
     <string name="txtBExercise2Pg1">Beginner Exercise 2</string>
     <string name="txtTVideos">Traveler Videos</string>
-    <string name="txtTVideo1">Asking Train Directions</string>
+    <string name="txtTVideo1"><b>Asking Train Directions</b></string>
     <string name="txtTVideoDesc1">In this video, you will see an real life example of how to ask train directions using Japanese.</string>
-    <string name="txtTVideo2">At a Convenience Store</string>
+    <string name="txtTVideo2"><b>At a Convenience Store</b></string>
     <string name="txtTVideoDesc2">In this video, you will get to experience a convenience store situation in Japan.</string>
     <string name="menu_t_lesson1_pg1">Traveler Lesson 1 Pg1</string>
     <string name="txtTLesson1Pg1"><b>Hello</b>\n こんにちは Konnichiwa\n</string>
-    <string name="txtTLesson1Pg1Ex"><b>Example:</b>\n こんにちは！元気ですか？\n (Konnichiwa! Genki desu ka?)\n = Hello! How are you?\n</string>
+    <string name="txtTLesson1Pg1Ex"><b>Example:</b>\n こんにちは！元気ですか？\n (Konnichiwa! Genki desu ka?)\n = Hello! How are you?</string>
     <string name="imgHello">Hello</string>
     <string name="menu_t_lesson1_pg2">Traveler Lesson 1 Pg2</string>
     <string name="txtTLesson1Pg2"><b>Good Morning</b>\n おはようございます Ohayou gozaimasu</string>
@@ -167,7 +167,7 @@
     <string name="txtTLesson1Pg3Ex"><b>Example:</b>\n ありがとう！助かりました！ \n (Arigatou! Tasukarimashita!) )\n = Thank you! That really helped!\n</string>
     <string name="imgThankyou">Thank you</string>
     <string name="menu_t_lesson1_pg4">Traveler Lesson 1 Pg4</string>
-    <string name="txtTLesson1Pg4"><b>Excuse me/ Sorry</b>\n すみません Sumimasen\n</string>
+    <string name="txtTLesson1Pg4"><b>Excuse me/ Sorry</b>\n すみません Sumimasen</string>
     <string name="txtTLesson1Pg4Ex"><b>Example:</b>\n すみません、道を教えてください。 \n (Sumimasen, michi o oshiete kudasai. )\n = Excuse me, can you tell me the way?</string>
     <string name="imgExcuseme">Excuse me</string>
     <string name="menu_t_lesson1_pg5">Traveler Lesson 1 Pg5</string>
@@ -192,7 +192,7 @@
     <string name="imgTrainstation">Train station</string>
     <string name="menu_t_lesson2_pg3">Traveler Lesson 2 Pg3</string>
     <string name="txtTLesson2Pg3"><b>Bus station</b>\n バス停（バステイ） basutei\n</string>
-    <string name="txtTLesson2Pg3Ex"><b>Example:</b>\n バス停は近いですか？ \n (Basutei wa chikai desu ka?) )\n = Is the bus stop nearby?\n</string>
+    <string name="txtTLesson2Pg3Ex"><b>Example:</b>\n バス停は近いですか？ \n (Basutei wa chikai desu ka?) )\n = Is the bus stop nearby?</string>
     <string name="imgBusstop">Bus stop</string>
     <string name="menu_t_lesson2_pg4">Traveler Lesson 2 Pg4</string>
     <string name="txtTLesson2Pg4"><b>Toilet</b>\n トイレ toire\n</string>

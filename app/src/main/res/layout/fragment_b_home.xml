@@ -10,12 +10,14 @@
         android:id="@+id/courseDropdown"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:backgroundTint="@color/pink_1"
+        android:popupBackground="@color/light_pink"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.11" />
-    
+
     <TextView
         android:id="@+id/txtBCourse"
         android:layout_width="wrap_content"
@@ -24,12 +26,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/txtBCourse"
-        android:textSize="30sp"
+        android:textColor="@color/pink_1"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.01999998" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/btnBLessons"
@@ -49,8 +52,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <!--android:background="@drawable/">-->
+            android:layout_height="wrap_content"
+            android:background="@drawable/pinkgradient">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -63,7 +66,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="16dp"
-                    android:src="@drawable/ic_lesson" />
+                    android:src="@drawable/lessons_icon" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -94,8 +97,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <!--android:background="@drawable/">-->
+            android:layout_height="wrap_content"
+            android:background="@drawable/pinkgradienttwo">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -108,7 +111,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="16dp"
-                    android:src="@drawable/ic_exercises" />
+                    android:src="@drawable/exercises_icon" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -138,8 +141,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <!--android:background="@drawable/">-->
+            android:layout_height="wrap_content"
+            android:background="@drawable/pinkgradientthree">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -152,7 +155,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="16dp"
-                    android:src="@drawable/ic_video" />
+                    android:src="@drawable/videos_icon" />
 
                 <TextView
                     android:layout_width="0dp"

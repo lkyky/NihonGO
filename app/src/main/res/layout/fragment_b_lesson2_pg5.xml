@@ -34,7 +34,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/light_pink_2">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -49,7 +50,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/txtBLesson2Pg5"
                     android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:textColor="@color/black"/>
 
                 <TextView
                     android:id="@+id/txtBLesson2Pg5Ex"
@@ -57,7 +59,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/txtBLesson2Pg5Ex"
                     android:textAlignment="center"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textColor="@color/dark_pink"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"

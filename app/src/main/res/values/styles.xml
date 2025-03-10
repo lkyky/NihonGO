@@ -2,16 +2,27 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Customize your theme here -->
+        <item name="android:fontFamily">@font/itim_regular</item>
+        <item name="colorPrimary">@color/toolbar_bg</item>
+        <item name="colorOnPrimary">@color/toolbar_text</item>
     </style>
 
     <style name="AppTheme.NoAnimation" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowAnimationStyle">@null</item>
+        <item name="colorPrimary">@color/toolbar_bg</item>
+        <item name="colorOnPrimary">@color/toolbar_text</item>
     </style>
 
     <style name="KanaDescTxt">
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:backgroundTint">@color/gray_1</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textColor">@color/pink_1</item>
     </style>
 
 </resources>

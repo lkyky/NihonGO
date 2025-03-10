@@ -38,7 +38,7 @@ public class BHomeFragment extends Fragment {
             ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                     requireContext(),
                     R.array.courseOption,
-                    android.R.layout.simple_spinner_item
+                    R.layout.spinner_dropdown_item
             );
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             binding.courseDropdown.setAdapter(adapter);

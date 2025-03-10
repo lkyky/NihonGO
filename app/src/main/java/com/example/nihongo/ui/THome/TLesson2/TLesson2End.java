@@ -46,7 +46,7 @@ public class TLesson2End extends Fragment {
         TextView btnForward = binding.linktoTExercise2;
         btnForward.setOnClickListener(v -> {
             NavController navController = Navigation.findNavController(view);
-            navController.navigate(R.id.BExercise2Fragment);
+            navController.navigate(R.id.TExercise2Fragment);
         });
     }
 
