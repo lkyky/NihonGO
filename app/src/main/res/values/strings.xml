@@ -215,4 +215,6 @@
     <string name="txtTExerciseDesc2">In this exercise, you will practice what you have learnt in lesson 2.</string>
     <string name="menu_t_exercise1">Traveler Exercise 1</string>
     <string name="menu_t_exercise2">Traveler Exercise 2</string>
+    <string name="txtCorrectAnswers"></string>
+    <string name="txtWrongAnswers"></string>
 </resources>

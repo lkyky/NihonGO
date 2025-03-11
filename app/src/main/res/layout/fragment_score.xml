@@ -12,26 +12,52 @@
         android:layout_height="50dp"
         android:text="@string/txtScore"
         android:textAlignment="center"
+        android:textColor="@color/dark_pink"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/dark_pink"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.32999998" />
+        app:layout_constraintVertical_bias="0.07999998" />
 
     <TextView
         android:id="@+id/txtFinalScore"
         android:layout_width="400dp"
         android:layout_height="100dp"
         android:textAlignment="center"
-        android:textSize="26sp"
         android:textColor="@color/pink_1"
+        android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001" />
 
+    <TextView
+        android:id="@+id/txtCorrectAnswers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:background="@color/pink_2"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txtFinalScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/txtWrongAnswers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:background="@color/gray_1"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txtCorrectAnswers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

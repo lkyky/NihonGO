@@ -81,6 +81,26 @@ public class BExercise1 extends Fragment {
         List<String> userAnswers = adapter.getUserAnswers();
         int score = firestoreHelper.checkAnswers(questionList, userAnswers);
 
+        ArrayList<String> correctQuestions = new ArrayList<>();
+        ArrayList<String> wrongQuestions = new ArrayList<>();
+
+        for (int i = 0; i < questionList.size(); i++) {
+            String questionText = questionList.get(i).getQuestionText(); // Ensure getQuestionText() is correct
+            String correctAnswer = questionList.get(i).getCorrectAnswer(); // Ensure getCorrectAnswer() exists
+            String userAnswer = userAnswers.get(i); // User's selected answer
+
+            Log.d("CheckAnswers", "Q: " + questionText + " | Correct: " + correctAnswer + " | User: " + userAnswer);
+
+            if (correctAnswer.equals(userAnswer)) {
+                correctQuestions.add(questionText);
+            } else {
+                wrongQuestions.add(questionText);
+            }
+        }
+
+        Log.d("CheckAnswers", "Correct Questions: " + correctQuestions.toString());
+        Log.d("CheckAnswers", "Wrong Questions: " + wrongQuestions.toString());
+
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             String userId = user.getUid(); // Get current user's unique ID
@@ -90,11 +110,14 @@ public class BExercise1 extends Fragment {
         }
 
         // Navigate to ScoreFragment
-        ScoreFragment scoreFragment = ScoreFragment.newInstance(score);
+        ScoreFragment scoreFragment = ScoreFragment.newInstance(score, correctQuestions, wrongQuestions);
         NavController navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_activity_main);
         Bundle bundle = new Bundle();
         bundle.putInt("score", score);
         bundle.putString("exerciseId", "BExercise1");
+        bundle.putStringArrayList("correct_questions", correctQuestions);
+        bundle.putStringArrayList("wrong_questions", wrongQuestions);
+
         navController.navigate(R.id.ScoreFragment, bundle);
     }
 }
