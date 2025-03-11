@@ -1,10 +1,12 @@
 package com.example.nihongo.ui.THome.TLesson2;
 
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,9 +17,13 @@ import androidx.navigation.Navigation;
 import com.example.nihongo.R;
 import com.example.nihongo.databinding.FragmentTLesson2Pg5Binding;
 
+import java.util.Locale;
+
 public class TLesson2Pg5 extends Fragment {
 
     private FragmentTLesson2Pg5Binding binding;
+    private TextToSpeech textToSpeech;
+    private ImageView btnSound;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -29,6 +35,18 @@ public class TLesson2Pg5 extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        textToSpeech = new TextToSpeech(requireContext(), status -> {
+            if (status == TextToSpeech.SUCCESS) {
+                int result = textToSpeech.setLanguage(Locale.JAPANESE);
+                if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+                    Toast.makeText(getContext(), "Japanese TTS is not supported!", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        btnSound = binding.btnSound;
+        btnSound.setOnClickListener(v -> speak("トイレはどこですか"));
 
         ImageView btnClose = binding.btnClose;
         btnClose.setOnClickListener(v -> {
@@ -48,5 +66,19 @@ public class TLesson2Pg5 extends Fragment {
             navController.navigate(R.id.TLesson2EndFragment);
         });
     }
+    private void speak(String text) {
+        if (textToSpeech != null) {
+            textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
+        }
+    }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        if (textToSpeech != null) {
+            textToSpeech.stop();
+            textToSpeech.shutdown();
+        }
+        binding = null;
+    }
 }

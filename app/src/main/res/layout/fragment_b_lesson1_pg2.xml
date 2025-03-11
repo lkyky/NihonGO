@@ -25,7 +25,7 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/bLesson1Pg2CardView"
         android:layout_width="350dp"
-        android:layout_height="400dp"
+        android:layout_height="450dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,23 +44,69 @@
                 android:orientation="vertical"
                 android:padding="14dp">
 
-                <TextView
-                    android:id="@+id/txtBLesson1Pg2"
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/txtBLesson1Pg2"
-                    android:textAlignment="center"
-                    android:textSize="26sp"
-                    android:textColor="@color/black"/>
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
 
-                <TextView
-                    android:id="@+id/txtBLesson1Pg2Ex"
-                    android:layout_width="match_parent"
+                    <TextView
+                        android:id="@+id/txtBLesson1Pg2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtBLesson1Pg2"
+                        android:textAlignment="center"
+                        android:textSize="26sp"
+                        android:textColor="@color/black"/>
+
+                    <ImageView
+                        android:id="@+id/btnSound"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:clickable="true"
+                        android:contentDescription="@string/btnSound"
+                        android:focusable="true"
+                        app:srcCompat="@drawable/ic_sound"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/txtBLesson1Pg2Ex"
-                    android:textAlignment="center"
-                    android:textSize="20sp"
-                    android:textColor="@color/dark_pink"/>
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <TextView
+                        android:id="@+id/txtBLesson1Pg2Ex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtBLesson1Pg2Ex"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/dark_pink"/>
+
+                    <ImageView
+                        android:id="@+id/btnSound2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:clickable="true"
+                        android:contentDescription="@string/btnSound2"
+                        android:focusable="true"
+                        app:srcCompat="@drawable/ic_sound"/>
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -109,7 +155,7 @@
             android:clickable="true"
             android:contentDescription="@string/btnBack"
             android:focusable="true"
-            app:srcCompat="@drawable/ic_arrow_back"></ImageView>
+            app:srcCompat="@drawable/ic_arrow_back"/>
 
         <ImageView
             android:id="@+id/btnForward"
@@ -118,7 +164,7 @@
             android:clickable="true"
             android:contentDescription="@string/btnForward"
             android:focusable="true"
-            app:srcCompat="@drawable/ic_arrow_forward"></ImageView>
+            app:srcCompat="@drawable/ic_arrow_forward"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

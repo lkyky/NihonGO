@@ -86,55 +86,55 @@
     <string name="menu_b_lesson1">Beginner Lesson 1</string>
     <string name="menu_b_lesson2">Beginner Lesson 2</string>
     <string name="btnClose">Close</string>
-    <string name="txtBLesson1Pg1"><b>One [1]</b>\n 一（いち）ichi\n</string>
-    <string name="txtBLesson1Pg1Ex"><b>Example:</b>\n 一年生（いちねんせい）ichinensei\n = First Year Student\n</string>
+    <string name="txtBLesson1Pg1"><b>One [1]</b>\n 一（いち）ichi\t</string>
+    <string name="txtBLesson1Pg1Ex"><b>Example:</b>\n 一年生（いちねんせい）ichinensei\n = First Year Student</string>
     <string name="imgNumOne">Number One</string>
     <string name="imgOneStudent">One Student</string>
     <string name="btnForward">Forward</string>
     <string name="menu_b_lesson1_pg2">Beginner Lesson 1 Pg2</string>
-    <string name="txtBLesson1Pg2"><b>Two [2]</b>\n 二（に）ni\n</string>
-    <string name="txtBLesson1Pg2Ex"><b>Example:</b>\n 二時（にじ）niji\n = Two o\' Clock \n</string>
+    <string name="txtBLesson1Pg2"><b>Two [2]</b>\n 二（に）ni\t</string>
+    <string name="txtBLesson1Pg2Ex"><b>Example:</b>\n 二時（にじ）niji\n = Two o\' Clock</string>
     <string name="imgNumTwo">Number Two</string>
     <string name="imgTwoOClock">Two o\' Clock</string>
     <string name="menu_b_lesson1_pg3">Beginner Lesson 1 Pg3</string>
-    <string name="txtBLesson1Pg3"><b>Three [3]</b>\n 三（さん）san\n</string>
-    <string name="txtBLesson1Pg3Ex"><b>Example:</b>\n 三人（さんにん）sannin\n = Three Person\n</string>
+    <string name="txtBLesson1Pg3"><b>Three [3]</b>\n 三（さん）san\t</string>
+    <string name="txtBLesson1Pg3Ex"><b>Example:</b>\n 三人（さんにん）sannin\n = Three Person</string>
     <string name="imgNumThree">Number Three</string>
     <string name="imgThreePerson">Three Person</string>
     <string name="menu_b_lesson1_pg4">Beginner Lesson 1 Pg4</string>
-    <string name="txtBLesson1Pg4"><b>Four [4]</b>\n 四（し／よん）shi/ yon\n</string>
-    <string name="txtBLesson1Pg4Ex"><b>Example:</b>\n 四月（しがつ）shigatsu\n = April\n</string>
+    <string name="txtBLesson1Pg4"><b>Four [4]</b>\n 四（し／よん）shi/ yon\t</string>
+    <string name="txtBLesson1Pg4Ex"><b>Example:</b>\n 四月（しがつ）shigatsu\n = April</string>
     <string name="imgNumFour">Number Four</string>
     <string name="imgApril">April</string>
     <string name="menu_b_lesson1_pg5">Beginner Lesson 1 Pg5</string>
-    <string name="txtBLesson1Pg5"><b>Five [5]</b>\n 五（ご）go\n</string>
-    <string name="txtBLesson1Pg5Ex"><b>Example:</b>\n 五円（ごえん）goen\n = Five Yen\n</string>
+    <string name="txtBLesson1Pg5"><b>Five [5]</b>\n 五（ご）go\t</string>
+    <string name="txtBLesson1Pg5Ex"><b>Example:</b>\n 五円（ごえん）goen\n = Five Yen</string>
     <string name="imgNumFive">Number Five</string>
     <string name="imgFiveYen">Five Yen</string>
     <string name="menu_b_lesson1_end">End of Beginner Lesson 1</string>
     <string name="txtBLesson1End"><b>You have completed \nlesson 1!!</b>\n\n Click below to continue to</string>
     <string name="linkToExercise1">\n<u>Exercise 1</u>\n</string>
-    <string name="txtBLesson2Pg1"><b>Father</b>\n お父さん（おとうさん）otousan\n</string>
-    <string name="txtBLesson2Pg1Ex"><b>Example:</b>\n お父さん（おとうさん）、こんにちは!\n Otousan, konnichiwa!\n = Hello, Dad!\n</string>
+    <string name="txtBLesson2Pg1"><b>Father</b>\n お父さん（おとうさん）otousan\t</string>
+    <string name="txtBLesson2Pg1Ex"><b>Example:</b>\n お父さん（おとうさん）、こんにちは!\n Otousan, konnichiwa!\n = Hello, Dad!</string>
     <string name="imgFather">Father</string>
     <string name="menu_b_lesson2_pg2">Beginner Lesson 2 Pg2</string>
-    <string name="txtBLesson2Pg2"><b>Mother</b>\n お母さん （おかあさん）okaasan\n</string>
-    <string name="txtBLesson2Pg2Ex"><b>Example:</b>\n お母さん （おかあさん）、おはよう!\n Okaasan, ohayou!\n = Good morning, Mom!\n</string>
+    <string name="txtBLesson2Pg2"><b>Mother</b>\n お母さん （おかあさん）okaasan\t</string>
+    <string name="txtBLesson2Pg2Ex"><b>Example:</b>\n お母さん （おかあさん）、おはよう!\n Okaasan, ohayou!\n = Good morning, Mom!</string>
     <string name="imgMother">Mother</string>
     <string name="menu_b_lesson2_pg3">Beginner Lesson 2 Pg3</string>
-    <string name="txtBLesson2Pg3"><b>Big brother</b>\n お兄さん （おにいさん）oniisan\n</string>
+    <string name="txtBLesson2Pg3"><b>Big brother</b>\n お兄さん （おにいさん）oniisan\t</string>
     <string name="txtBLesson2Pg3Ex"><b>Example:</b>\n お兄さん （おにいさん）、ありがとう!\n Oniisan, arigatou!\n = Thanks, big brother!</string>
     <string name="imgBigBrother">Big Brother</string>
     <string name="menu_b_lesson2_pg4">Beginner Lesson 2 Pg4</string>
-    <string name="txtBLesson2Pg4"><b>Big sister:</b>\n お姉さん　（おねえさん）oneesan\n</string>
+    <string name="txtBLesson2Pg4"><b>Big sister:</b>\n お姉さん　（おねえさん）oneesan\t</string>
     <string name="txtBLesson2Pg4Ex"><b>Example:</b>\n お姉さん　（おねえさん）、おやすみなさい!\n Oneesan, oyasuminasai!\n = Good night, big sister!</string>
     <string name="imgBigSister">Big Sister</string>
     <string name="menu_b_lesson2_pg5">Beginner Lesson 2 Pg5</string>
-    <string name="txtBLesson2Pg5"><b>Little brother</b>\n 弟 （おとうと）otouto\n</string>
+    <string name="txtBLesson2Pg5"><b>Little brother</b>\n 弟 （おとうと）otouto\t</string>
     <string name="txtBLesson2Pg5Ex"><b>Example:</b>\n 弟（おとうと）はゲームが好きです\n Otouto wa geemu ga suki desu.\n = My younger brother likes games.</string>
     <string name="imgLittleBrother">Little Brother</string>
     <string name="menu_b_lesson2_pg6">Beginner Lesson 2 Pg6</string>
-    <string name="txtBLesson2Pg6"><b>Little sister</b>\n 妹 （いもうと） imouto\n</string>
+    <string name="txtBLesson2Pg6"><b>Little sister</b>\n 妹 （いもうと） imouto\t</string>
     <string name="txtBLesson2Pg6Ex"><b>Example:</b>\n 妹（いもうと）はかわいいです!\n Imouto wa kawaii desu!\n = My little sister is cute!</string>
     <string name="imgLittleSister">Little Sister</string>
     <string name="menu_b_lesson2_end">End of Beginner Lesson 2</string>
@@ -155,24 +155,24 @@
     <string name="txtTVideo2"><b>At a Convenience Store</b></string>
     <string name="txtTVideoDesc2">In this video, you will get to experience a convenience store situation in Japan.</string>
     <string name="menu_t_lesson1_pg1">Traveler Lesson 1 Pg1</string>
-    <string name="txtTLesson1Pg1"><b>Hello</b>\n こんにちは Konnichiwa\n</string>
+    <string name="txtTLesson1Pg1"><b>Hello</b>\n こんにちは Konnichiwa\t</string>
     <string name="txtTLesson1Pg1Ex"><b>Example:</b>\n こんにちは！元気ですか？\n (Konnichiwa! Genki desu ka?)\n = Hello! How are you?</string>
     <string name="imgHello">Hello</string>
     <string name="menu_t_lesson1_pg2">Traveler Lesson 1 Pg2</string>
-    <string name="txtTLesson1Pg2"><b>Good Morning</b>\n おはようございます Ohayou gozaimasu</string>
+    <string name="txtTLesson1Pg2"><b>Good Morning</b>\n おはようございます Ohayou gozaimasu\t</string>
     <string name="txtTLesson1Pg2Ex"><b>Example:</b>\n おはようございます。今日はいい天気ですね。\n (Ohayou gozaimasu. Kyou wa ii tenki desu ne.)\n = Good morning. The weather is nice today, isn’t it?</string>
     <string name="imgGoodmorning">Hello</string>
     <string name="menu_t_lesson1_pg3">Traveler Lesson 1 Pg3</string>
-    <string name="txtTLesson1Pg3"><b>Thank you(very much)</b>\n ありがとうございます Arigatou gozaimasu\n</string>
-    <string name="txtTLesson1Pg3Ex"><b>Example:</b>\n ありがとう！助かりました！ \n (Arigatou! Tasukarimashita!) )\n = Thank you! That really helped!\n</string>
+    <string name="txtTLesson1Pg3"><b>Thank you(very much)</b>\n ありがとうございます Arigatou gozaimasu\t</string>
+    <string name="txtTLesson1Pg3Ex"><b>Example:</b>\n ありがとう！助かりました！ \n (Arigatou! Tasukarimashita!) )\n = Thank you! That really helped!</string>
     <string name="imgThankyou">Thank you</string>
     <string name="menu_t_lesson1_pg4">Traveler Lesson 1 Pg4</string>
-    <string name="txtTLesson1Pg4"><b>Excuse me/ Sorry</b>\n すみません Sumimasen</string>
+    <string name="txtTLesson1Pg4"><b>Excuse me/ Sorry</b>\n すみません Sumimasen\t</string>
     <string name="txtTLesson1Pg4Ex"><b>Example:</b>\n すみません、道を教えてください。 \n (Sumimasen, michi o oshiete kudasai. )\n = Excuse me, can you tell me the way?</string>
     <string name="imgExcuseme">Excuse me</string>
     <string name="menu_t_lesson1_pg5">Traveler Lesson 1 Pg5</string>
-    <string name="txtTLesson1Pg5"><b>Please</b>\n お願いします Onegai shimasu\n</string>
-    <string name="txtTLesson1Pg5Ex"><b>Example:</b>\n メニューをお願いします。\n (Menyuu o onegai shimasu.)\n = The menu, please.\n</string>
+    <string name="txtTLesson1Pg5"><b>Please</b>\n お願いします Onegai shimasu\t</string>
+    <string name="txtTLesson1Pg5Ex"><b>Example:</b>\n メニューをお願いします。\n (Menyuu o onegai shimasu.)\n = The menu, please.</string>
     <string name="imgPlease">Please</string>
     <string name="menu_t_lesson1_end">End of Traveler Lesson 1</string>
     <string name="txtTLesson1End"><b>You have completed \n lesson 1!!</b>\n\n Click below to continue to</string>
@@ -183,23 +183,23 @@
     <string name="txtTLesson2"><b>Lesson 2 - \n Getting Around (Directions)</b></string>
     <string name="txtTLessonDesc2">In this lesson, you will learn how to ask basic directions.</string>
     <string name="menu_t_lesson2_pg1">Traveler Lesson 2 Pg1</string>
-    <string name="txtTLesson2Pg1"><b>Where</b>\n どこ doko\n</string>
+    <string name="txtTLesson2Pg1"><b>Where</b>\n どこ doko\t</string>
     <string name="txtTLesson2Pg1Ex"><b>Example:</b>\n ここはどこですか？\n (Koko wa doko desu ka?)\n = Where is this place? / Where am I?</string>
     <string name="imgWhere">Where</string>
     <string name="menu_t_lesson2_pg2">Traveler Lesson 2 Pg2</string>
-    <string name="txtTLesson2Pg2"><b>Train station</b>\n 駅前（えき） eki\n</string>
-    <string name="txtTLesson2Pg2Ex"><b>Example:</b>\n それは駅（えき）ですか？ \n (Sore wa eki desu ka?)\n = Is that the train station?\n</string>
+    <string name="txtTLesson2Pg2"><b>Train station</b>\n 駅前（えき） eki\t</string>
+    <string name="txtTLesson2Pg2Ex"><b>Example:</b>\n それは駅（えき）ですか？ \n (Sore wa eki desu ka?)\n = Is that the train station?</string>
     <string name="imgTrainstation">Train station</string>
     <string name="menu_t_lesson2_pg3">Traveler Lesson 2 Pg3</string>
-    <string name="txtTLesson2Pg3"><b>Bus station</b>\n バス停（バステイ） basutei\n</string>
+    <string name="txtTLesson2Pg3"><b>Bus station</b>\n バス停（バステイ） basutei\t</string>
     <string name="txtTLesson2Pg3Ex"><b>Example:</b>\n バス停は近いですか？ \n (Basutei wa chikai desu ka?) )\n = Is the bus stop nearby?</string>
     <string name="imgBusstop">Bus stop</string>
     <string name="menu_t_lesson2_pg4">Traveler Lesson 2 Pg4</string>
-    <string name="txtTLesson2Pg4"><b>Toilet</b>\n トイレ toire\n</string>
-    <string name="txtTLesson2Pg4Ex"><b>Example:</b>\n トイレはあそこです。\n (Toire wa asoko desu.)\n = The toilet is over there.\n</string>
+    <string name="txtTLesson2Pg4"><b>Toilet</b>\n トイレ toire\t</string>
+    <string name="txtTLesson2Pg4Ex"><b>Example:</b>\n トイレはあそこです。\n (Toire wa asoko desu.)\n = The toilet is over there.</string>
     <string name="imgToilet">Toilet</string>
     <string name="menu_t_lesson2_pg5">Traveler Lesson 2 Pg5</string>
-    <string name="txtTLesson2Pg5"><b>Where is the <u>toilet</u>?</b>\n <u>トイレ</u>はどこですか。 <u>Toire</u> wa doko desuka?\n</string>
+    <string name="txtTLesson2Pg5"><b>Where is the <u>toilet</u>?</b>\n <u>トイレ</u>はどこですか。 <u>Toire</u> wa doko desuka?\t</string>
     <string name="txtTLesson2Pg5Ex">You may change the underlined words to any places you wish.\n</string>
     <string name="imgToilet2">Toilet</string>
     <string name="imgQuestionmark">Question Mark</string>
@@ -217,4 +217,6 @@
     <string name="menu_t_exercise2">Traveler Exercise 2</string>
     <string name="txtCorrectAnswers"></string>
     <string name="txtWrongAnswers"></string>
+    <string name="btnSound">Audio</string>
+    <string name="btnSound2">Audio Example</string>
 </resources>
