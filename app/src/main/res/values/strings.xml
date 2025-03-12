@@ -219,4 +219,5 @@
     <string name="txtWrongAnswers"></string>
     <string name="btnSound">Audio</string>
     <string name="btnSound2">Audio Example</string>
+    <string name="menu_translator">Translator</string>
 </resources>

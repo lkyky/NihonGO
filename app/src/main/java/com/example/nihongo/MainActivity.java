@@ -1,6 +1,8 @@
 package com.example.nihongo;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.navigation.NavController;
@@ -61,8 +63,11 @@ public class MainActivity extends BaseActivity {
         else if (itemId == R.id.nav_kana_chart) {
             navController.navigate(R.id.nav_kana_chart);
             return true;
-        }
-        else if (itemId == R.id.nav_profile) {
+        } else if (itemId == R.id.nav_translator) {
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://translate.google.co.jp/?hl=en&sl=en&tl=ja&op=translate"));
+            startActivity(intent);
+            return true;
+        } else if (itemId == R.id.nav_profile) {
             navController.navigate(R.id.nav_profile);
             return true;
         }
