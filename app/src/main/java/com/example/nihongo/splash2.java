@@ -26,6 +26,6 @@ public class splash2 extends BaseActivity {
             }
         };
         Timer opening = new Timer();
-        opening.schedule(task, 2000);
+        opening.schedule(task, 5000);
     }
 }

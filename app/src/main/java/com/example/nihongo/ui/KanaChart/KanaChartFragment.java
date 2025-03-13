@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.bumptech.glide.Glide;
 import com.example.nihongo.R;
 
 public class KanaChartFragment extends Fragment {
@@ -39,6 +40,18 @@ public class KanaChartFragment extends Fragment {
         txtKanaDesc3.setText(Html.fromHtml(getString(R.string.txtKanaDesc3), Html.FROM_HTML_MODE_LEGACY));
         txtKanaDesc4.setText(Html.fromHtml(getString(R.string.txtKanaDesc4), Html.FROM_HTML_MODE_LEGACY));
         txtKanaDesc5.setText(getString(R.string.txtKanaDesc5));
+
+        Glide.with(this)
+                .load(R.drawable.kana_intro)
+                .into(imgKanaIntro);
+
+        Glide.with(this)
+                .load(R.drawable.hiraganachart)
+                .into(imgHiraganaChart);
+
+        Glide.with(this)
+                .load(R.drawable.katakanachart)
+                .into(imgKatakanaChart);
 
         return view;
     }
