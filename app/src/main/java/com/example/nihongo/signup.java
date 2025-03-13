@@ -50,6 +50,11 @@ public class signup extends BaseActivity {
                 return;
             }
 
+            if (password.length() < 6) {
+                showPasswordErrorDialog();
+                return;
+            }
+
             auth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(task -> {
                         if(task.isSuccessful()){
@@ -79,5 +84,12 @@ public class signup extends BaseActivity {
             startActivity(intent);
         });
 
+    }
+    private void showPasswordErrorDialog() {
+        new android.app.AlertDialog.Builder(this)
+                .setTitle("Invalid Password")
+                .setMessage("Password must be at least 6 characters long.")
+                .setPositiveButton("OK", (dialog, which) -> dialog.dismiss())
+                .show();
     }
 }
